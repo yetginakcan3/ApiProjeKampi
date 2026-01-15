@@ -26,7 +26,7 @@ namespace ApiProjeKampi.WebApi.Controllers
 
         [HttpPost]
 
-        public IActionResult CreateContact(CreateContactDto createContactDto)
+        public IActionResult CreateContact(CreateFeatureDto createContactDto)
         {
             Contact contact = new Contact();
             contact.Email = createContactDto.Email;
@@ -59,7 +59,7 @@ namespace ApiProjeKampi.WebApi.Controllers
 
         [HttpPut]
 
-        public IActionResult UpdateContact(UpdateContactDto updateContactDto)
+        public IActionResult UpdateContact(UpdateFeatureDto updateContactDto)
         {
             Contact contact = new Contact();
             contact.Email = updateContactDto.Email;
